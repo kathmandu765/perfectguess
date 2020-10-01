@@ -1,8 +1,11 @@
+#perfect guess game
+#import random
 import random
 randNumber = random.randint(1, 100)
 userGuess = None
 guesses = 0
 
+#while loop
 while(userGuess != randNumber):
     userGuess = int(input("Enter your guess: "))
     guesses += 1
@@ -22,3 +25,5 @@ if(guesses<hiscore):
     print("You have just broken the high score!")
     with open("hiscore.txt", "w") as f:
         f.write(str(guesses))
+        
+        #It is perfect game for new begginer
